@@ -5,12 +5,6 @@ Claire
 Erick
 Isabelle
 
-
-
-Only Erick
-
-nice try evil erick
-
 # Any necessary license information
 
 
