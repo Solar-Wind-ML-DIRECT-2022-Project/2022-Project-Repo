@@ -25,7 +25,7 @@ dependencies:
   - brotlipy=0.7.0
   - bzip2=1.0.8
   - c-ares=1.18.1
-  - ca-certificates=2021.10.8
+  - ca-certificates=2022.2.1
   - cairo=1.16.0
   - certifi=2021.10.8
   - cffi=1.15.0
@@ -182,6 +182,7 @@ dependencies:
   - prompt_toolkit=3.0.20
   - prophet=1.0.1
   - ptyprocess=0.7.0
+  - pycodestyle=2.8.0
   - pycparser=2.21
   - pygments=2.11.2
   - pymeeus=0.5.10
