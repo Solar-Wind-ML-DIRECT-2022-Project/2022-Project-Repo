@@ -6,8 +6,11 @@ Main project repository for 2022 DIRECT course project at UW.
 ## Motivation
 Provide a paragraph description of the purpose of our project
 
-## Methods/Usage
-Example of how to use the software
+## Methods
+Provide description of why we chose the model we did 
+
+## Usage
+Provide an example of how to use the software
 
 ## License 
 Our project is licensed under the MIT license. 
