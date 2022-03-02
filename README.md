@@ -1,7 +1,11 @@
-# 2022-Project-Repo
+# SERF
 Main project repository for 2022 DIRECT course project at UW.
 
-## Example of how to use the software
+## Motivation
+Provide a paragraph description of the purpose of our project
+
+## Methods/Usage
+Example of how to use the software
 
 ## License 
 Our project is licensed under the MIT license. 
