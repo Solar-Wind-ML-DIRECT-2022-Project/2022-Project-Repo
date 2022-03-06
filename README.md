@@ -20,6 +20,9 @@ The Prediction of Worldwide Energy Resource (POWER) Project is funded through th
 
 ## Contact Information
 Spencer sgcira@uw.edu
+
 Claire cbens01@uw.edu
+
 Erick etieu@uw.edu
+
 Isabelle ipach@uw.edu
