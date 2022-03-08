@@ -5,6 +5,7 @@ import numpy as np
 
 def import_geojson(geojson):
     '''imports geojson to notebook and reads with geopandas'''
+    '''input must be in 'NASA/<file.json>' format, or other path name'''
     filename = geojson
     data = gp.read_file(filename)
     return(data)
