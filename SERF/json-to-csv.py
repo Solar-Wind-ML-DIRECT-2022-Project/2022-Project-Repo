@@ -38,6 +38,7 @@ def to_datetime(monthly):
 
 def geojson_to_csv(geojson):
     '''convert geojson to csv'''
+    '''input must be in 'NASA/<file.json>' format, or other path name'''
     data = import_geojson(geojson)
     df1 = convert_data(data)
     monthly = remove_annual(df1)
