@@ -29,11 +29,10 @@ def to_datetime(monthly):
         return dfseries
 
     monthly['ds']= monthly.index
-    monthly['ds']= monthly['ds'].astype(str)
     monthly['ds'] = monthly['ds'].apply(append)
-    monthly = monthly.set_index('ds')
     
-    monthly.index = pd.to_datetime(monthly.index)
+    monthly['Year']= monthly.index
+    monthly['Year'] = pd.to_datetime(monthly['ds'])
     return(monthly)
 
 def geojson_to_csv(geojson):
