@@ -3,12 +3,14 @@ import pandas as pd
 import datetime as dt
 import numpy as np
 
+
 def import_geojson(geojson):
     '''imports geojson to notebook and reads with geopandas'''
     '''input must be in 'NASA/<file.json>' format, or other path name'''
     filename = geojson
     data = gp.read_file(filename)
     return(data)
+
 
 def convert_data(data):
     '''converts parameter column to dict then df reads with Pandas'''
@@ -17,10 +19,12 @@ def convert_data(data):
     df = pd.DataFrame(pd_df)
     return(df)
 
+
 def remove_annual(df):
     '''remove the annual average rows (13th row) from df'''
     monthly = df.drop(df.index[12::13])
     return(monthly)
+
 
 def to_datetime(monthly):
     '''convert index from yearmonth string to datetime'''
@@ -28,12 +32,12 @@ def to_datetime(monthly):
         dfseries = dfseries[:4] + '-' + dfseries[4:]
         return dfseries
 
-    monthly['ds']= monthly.index
+    monthly['ds'] = monthly.index
     monthly['ds'] = monthly['ds'].apply(append)
-    
-    monthly['Year']= monthly.index
+    monthly['Year'] = monthly.index
     monthly['Year'] = pd.to_datetime(monthly['ds'])
     return(monthly)
+
 
 def geojson_to_csv(geojson):
     '''convert geojson to csv'''
