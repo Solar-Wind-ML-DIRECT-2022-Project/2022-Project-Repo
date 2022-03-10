@@ -34,8 +34,8 @@ def to_datetime(monthly):
 
     monthly['ds'] = monthly.index
     monthly['ds'] = monthly['ds'].apply(append)
-    monthly['Year'] = monthly.index
-    monthly['Year'] = pd.to_datetime(monthly['ds'])
+    monthly = monthly.set_index('ds')
+    monthly.index = pd.to_datetime(monthly.index)
     return(monthly)
 
 
