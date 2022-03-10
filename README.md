@@ -1,9 +1,9 @@
 # SERF: Solar Energy Resource Forecasting
 ## Motivation
-This package is intended to forecast the solar resource based on prior historical data for a variety of locations across Washington State.
+This package is intended to forecast the solar resource (i.e. solar irradiance) based on prior historical data for a variety of locations across Washington State.
 
 ## Methods
-The program utilizes SARIMA (seasonal auto-regressive integrated moving average) which is a an extension of the ARIMA (autoregressive integrated moving average). SARIMA handles univariate time series data that has seasonal variations. 
+This program utilizes SARIMA (seasonal auto-regressive integrated moving average) which is a an extension of the statistical predicition approach ARIMA (autoregressive integrated moving average). SARIMA handles univariate time series data that has seasonal variations. The software takes in historical irradiance data for specific geolocations in a confined geographical region. With this data, SARIMA predicts future irradiance data for each of the geolocations. The prediction data for each of the locations is then used to provide estimates (based on a linear surface fit) for locaitons that lie between the known locations.
 
 ## Usage
 Provide an example of how to use the software
