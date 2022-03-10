@@ -8,7 +8,10 @@ def import_geojson(geojson):
     '''imports geojson to notebook and reads with geopandas'''
     '''input must be in 'NASA/<file.json>' format, or other path name'''
     filename = geojson
-    data = gp.read_file(filename)
+    if filename.endswith('.json'):
+        data = gp.read_file(filename)
+    else:
+        raise TypeError('file extension is not .json.')
     return(data)
 
 
@@ -21,8 +24,14 @@ def convert_data(data):
 
 
 def remove_annual(df):
-    '''remove the annual average rows (13th row) from df'''
-    monthly = df.drop(df.index[12::13])
+    '''remove the annual average rows (13th month) from df'''
+    monthly = df[~df.index.str.endswith('13', na=False)]
+    if len(monthly) > 444:
+        raise ValueError('Check length of dataset.')
+    elif len(monthly) < 444:
+        raise ValueError('Check index. Length of dataset is short.')
+    else:
+        pass
     return(monthly)
 
 
@@ -32,11 +41,12 @@ def to_datetime(monthly):
         dfseries = dfseries[:4] + '-' + dfseries[4:]
         return dfseries
 
-    monthly['ds'] = monthly.index
-    monthly['ds'] = monthly['ds'].apply(append)
-    monthly = monthly.set_index('ds')
-    monthly.index = pd.to_datetime(monthly.index)
-    return(monthly)
+    monthly.index = monthly.index.rename('ds')
+    dated = monthly.reset_index()
+    dated['ds'] = dated['ds'].apply(append)
+    dated = dated.set_index('ds')
+    dated.index = pd.to_datetime(dated.index)
+    return(dated)
 
 
 def geojson_to_csv(geojson):
@@ -46,4 +56,8 @@ def geojson_to_csv(geojson):
     df1 = convert_data(data)
     monthly = remove_annual(df1)
     df = to_datetime(monthly)
+    if not isinstance(df.index, pd.core.indexes.datetimes.DatetimeIndex):
+        raise TypeError('index type must be DatetimeIndex')
+    else:
+        pass
     return(df)
