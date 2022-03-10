@@ -9,7 +9,7 @@ dependencies:
  - numpy
  - matplotlib
  - plotly
- - scikitlearn
+ - scikit-learn
  - statsmodels
  - optuna
  
