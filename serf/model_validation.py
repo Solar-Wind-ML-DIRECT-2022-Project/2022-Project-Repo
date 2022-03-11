@@ -15,13 +15,12 @@ import ts_train_test_split
 from ts_train_test_split import uni_selection
 from ts_train_test_split import single_split
 
-def model_validation(locations, sample):
+def model_val(locations, sample):
     '''use pd.read_csv('Locations.csv') to access required data. 
     Sample must be integer index of desired location.
     inputs hyperparameters and fits model with training set, predicts last 48 months,
-    calculates MSE and r2 of predicted values against X_testv (48 months)'''
+    calculates MSE and r2 of predicted values against X_test (48 months)'''
     prediction = []
-    ci = []
     
     geojson = locations['filepath'][sample]
     df = geojson_to_csv(geojson)
@@ -34,12 +33,10 @@ def model_validation(locations, sample):
     model = SARIMAX(X_train, order = (p,d,q), seasonal_order = (P,D,Q,s))
     model_fit = model.fit(disp = False)
     predict = model_fit.get_prediction(start='2017-01-01', end='2020-12-01')
-    predict_ci = predict.conf_int()
     
     prediction.append(predict.predicted_mean)
     predicted = pd.DataFrame(prediction)
     predicted = predicted.T
-    ci.append(predict_ci)
     MSE = mean_squared_error(X_test, predicted)
     r2 = r2_score(X_test, predicted)
-    return predicted, ci, MSE, r2
+    return MSE, r2
