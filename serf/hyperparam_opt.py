@@ -1,4 +1,4 @@
-__version__ = "1.0"
+__version__ = "1.1"
 
 # optimizing hyperparameters
 
@@ -7,23 +7,34 @@ import pandas as pd
 import optuna
 import numpy as np
 import sklearn
+import os
 
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.metrics import r2_score
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 def loadjson(filename, column_name='ALLSKY_KT'):
-    geodf = gp.read_file(filename)
-    Idict = geodf['parameter'][0]
-    Idf =  pd.DataFrame.from_dict(Idict)
-    df = pd.DataFrame(Idf[column_name])
+    """
+    loads the geojson files and extracts the data into a dataframe  
+    """
+    if os.path.exists(filename):
+        geodf = gp.read_file(filename)
+        Idict = geodf['parameter'][0]
+        Idf =  pd.DataFrame.from_dict(Idict)
+        df = pd.DataFrame(Idf[column_name])
+    else:
+        raise ValueError('file does not exist')
     return df
 
 def rm13(df):
     """
-    remove every 13th row to get rid of yearly average in geojson files.
+    remove every 13th row in a dataframe 
+    to get rid of yearly average in geojson files.
     """
-    df = df.drop(df.index[12::13])
+    if type(df) == pd.DataFrame:
+        df = df.drop(df.index[12::13])
+    else:
+        raise TypeError('Datatype is not a DataFrame')
     return df
 
 def numtodate(dfseries):
@@ -31,13 +42,21 @@ def numtodate(dfseries):
     return dfseries
 
 def Prophet_preproc(df, column_y="ALLSKY_KT"):
-    df = df.rename(columns={column_y: "y"})
-    df['ds'] = df.index
-    df['ds'] = df['ds'].astype(str)
-    df['ds'] = df['ds'].apply(numtodate)
+    if column_y in df:
+        df = df.rename(columns={column_y: "y"})
+        df['ds'] = df.index
+        df['ds'] = df['ds'].astype(str)
+        df['ds'] = df['ds'].apply(numtodate)
+    else:
+        raise ValueError('column name is not in dataframe')
     return df
 
 def TSS(df):
+    """
+    splits the dataframe using timeseries splits into 11 different splits
+    takes the second to last split to save as the validation split.
+    takes the last split as the testing split.
+    """
     X = df['ds'].values
     y = df['y'].values
     X_dict = {}
