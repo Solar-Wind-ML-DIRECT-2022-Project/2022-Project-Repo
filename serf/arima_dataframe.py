@@ -15,7 +15,7 @@ def arima_results(pred_sol):
         if month == 12:
             year += 1
             month = 1
-        years.append(datetime.date(year, month, day))
+        years.append(datetime.datetime(year, month, day))
         month += 1
     # Adding the time column 'Year' to the ARIMA dataframe
     df['Year'] = years
