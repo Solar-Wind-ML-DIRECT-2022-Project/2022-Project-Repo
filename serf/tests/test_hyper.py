@@ -70,3 +70,22 @@ class test_hyperparam_opt(unittest.TestCase):
         df = Prophet_preproc(df)
         with self.assertRaises(TypeError):
             X, Y = TSS(1)
+
+    '''
+    this is an intensive test, only run when necessary
+    def test_hyper_study(self):
+        df = loadjson(filename)
+        df = rm13(df)
+        df = Prophet_preproc(df)
+        X, y = TSS(df)
+        results = study_hyper(y['y_train'], y['y_val'], n_trials=1)
+        return
+    '''
+
+    def test_r2(self):
+        df = loadjson(filename)
+        df = rm13(df)
+        df = Prophet_preproc(df)
+        X, y = TSS(df)
+        score = r2score_TSS(y['y_train'], y['y_val'], 6, 1, 3, 1, 0, 1)
+        assert isinstance(score, float)

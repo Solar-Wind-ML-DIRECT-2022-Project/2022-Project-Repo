@@ -108,12 +108,12 @@ def objective(trial,y_train,y_val):
     
     return score
 
-def study_hyper(y_train,y_val):
+def study_hyper(y_train,y_val,n_trials=50):
 
     argfunction = lambda trial: objective(trial,y_train,y_val)
     study = optuna.create_study(
         sampler=optuna.samplers.TPESampler(), direction='maximize')
-    study.optimize(argfunction, n_trials=50)
+    study.optimize(argfunction, n_trials=n_trials)
         #,y_train=y_train,y_val=y_val)
 
     results = study.trials_dataframe()
