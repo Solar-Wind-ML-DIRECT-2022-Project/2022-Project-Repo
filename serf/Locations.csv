@@ -1,28 +1,28 @@
-,lat,lon,Place,p,d,q,P,D,Q, filepath
-0,49.0362,-122.3247,"Abbotsford, Canada",3,1,3,1,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_049d0362N_122d3247W_LST.json'
-1,49.0362,-118.4245,"Grand Forks, Canada",7,0,8,0,1,1,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_049d0362N_118d4245W_LST.json'
-2,48.9289,-117.8306,"Northport, WA",6,1,7,2,0,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d9289N_117d8306W_LST.json
-3,48.7835,-122.3357,"Dewey, WA",8,0,6,1,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d7835N_122d3357W_LST.json'
-4,48.7826,-121.7994,"Mt. Baker, WA",8,1,8,0,0,2,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d7826N_121d7994W_LST.json'
-5,48.5767,-122.9509,"Shaw Island, WA",7,0,7,1,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d5767N_122d9509W_LST.json
-6,48.5085,-117.3252,"Rudy, WA",8,1,5,1,1,2,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d5085N_117d3252W_LST.json'
-7,48.4093,-123.5716,"Metchosin, Canada",7,1,4,1,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d4093N_123d5716W_LST.json'
-8,48.0139,-123.4453,"Port Angeles, WA",7,1,8,0,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d0139N_123d4453W_LST.json'
-9,47.9735,-122.2038,"Everett,  WA",4,0,5,0,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d9735N_122d2038W_LST.json'
-10,47.8695,-118.8001,"Wilbur, WA",2,0,5,1,1,3,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d8695N_118d8001W_LST.json'
-11,47.6748,-117.3698,"Spokane, WA",7,0,7,2,0,3,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d6748N_117d3698W_LST.json'
-12,47.6202,-122.14,"Bellevue, WA",5,0,6,0,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d6202N_122d1400W_LST.json'
-13,47.6155,-122.2917,"Seattle, WA",6,1,1,1,1,1,'POWER_Point_Monthly_Timeseries_1981_2020_047d6155N_122d2917W_LST (1).json'
-14,47.559,-122.7195,"Gorst, WA",7,0,2,1,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d5590N_122d7195W_LST.json'
-15,47.5053,-121.8406,"Snoqualmie, WA",5,0,7,2,1,3,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d5053N_121d8406W_LST.json'
-16,47.4189,-120.3032,"Wenatchee, WA",6,0,6,3,0,3,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d4189N_120d3032W_LST.json'
-17,47.3855,-122.1983,"Kent, WA",7,0,5,2,1,3,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d3855N_122d1983W_LST.json'
-18,47.2402,-122.4345,"Tacoma, WA",1,0,7,0,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d2402N_122d4345W_LST.json'
-19,47.1095,-119.232,"Moses Lake, WA",6,0,7,1,0,1,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d1095N_119d2320W_LST.json'
-20,47.0347,-122.863,"Olympia, WA",2,0,5,0,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d0347N_122d8630W_LST.json'
-21,46.4134,-117.0293,"Lewiston, ID",8,1,1,0,1,3,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d4134N_117d0293W_LST.json'
-22,46.2199,-119.0837,"Kennewick, WA",5,0,8,0,1,1,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d2199N_119d0837W_LST.json'
-23,46.1704,-123.7804,"Navy Heights, OR",4,0,5,0,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d1704N_123d7804W_LST.json'
-24,46.1514,-122.8191,"Kelso, WA",0,0,6,0,1,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d1514N_122d8191W_LST.json'
-25,46.0562,-118.3476,"Walla Walla, WA",6,0,7,2,0,2,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d0562N_118d3476W_LST.json'
-26,45.4969,-122.5938,"Portland, OR",0,0,0,0,0,0,'NASA/POWER_Point_Monthly_Timeseries_1981_2020_045d4969N_122d5938W_LST.json'
+,lat,lon,Place,p,d,q,P,D,Q,filepath
+0,49.0362,-122.3247,"Abbotsford, Canada",3,1,3,1,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_049d0362N_122d3247W_LST.json
+1,49.0362,-118.4245,"Grand Forks, Canada",7,0,8,0,1,1,NASA/POWER_Point_Monthly_Timeseries_1981_2020_049d0362N_118d4245W_LST.json
+2,48.9289,-117.8306,"Northport, WA",6,1,7,2,0,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d9289N_117d8306W_LST.json
+3,48.7835,-122.3357,"Dewey, WA",8,0,6,1,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d7835N_122d3357W_LST.json
+4,48.7826,-121.7994,"Mt. Baker, WA",8,1,8,0,0,2,NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d7826N_121d7994W_LST.json
+5,48.5767,-122.9509,"Shaw Island, WA",7,0,7,1,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d5767N_122d9509W_LST.json
+6,48.5085,-117.3252,"Rudy, WA",8,1,5,1,1,2,NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d5085N_117d3252W_LST.json'
+7,48.4093,-123.5716,"Metchosin, Canada",7,1,4,1,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d4093N_123d5716W_LST.json
+8,48.0139,-123.4453,"Port Angeles, WA",7,1,8,0,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_048d0139N_123d4453W_LST.json
+9,47.9735,-122.2038,"Everett,  WA",4,0,5,0,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d9735N_122d2038W_LST.json
+10,47.8695,-118.8001,"Wilbur, WA",2,0,5,1,1,3,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d8695N_118d8001W_LST.json
+11,47.6748,-117.3698,"Spokane, WA",7,0,7,2,0,3,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d6748N_117d3698W_LST.json
+12,47.6202,-122.14,"Bellevue, WA",5,0,6,0,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d6202N_122d1400W_LST.json
+13,47.6155,-122.2917,"Seattle, WA",6,1,1,1,1,1,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d6155N_122d2917W_LST (1).json
+14,47.559,-122.7195,"Gorst, WA",7,0,2,1,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d5590N_122d7195W_LST.json
+15,47.5053,-121.8406,"Snoqualmie, WA",5,0,7,2,1,3,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d5053N_121d8406W_LST.json
+16,47.4189,-120.3032,"Wenatchee, WA",6,0,6,3,0,3,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d4189N_120d3032W_LST.json
+17,47.3855,-122.1983,"Kent, WA",7,0,5,2,1,3,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d3855N_122d1983W_LST.json
+18,47.2402,-122.4345,"Tacoma, WA",1,0,7,0,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d2402N_122d4345W_LST.json
+19,47.1095,-119.232,"Moses Lake, WA",6,0,7,1,0,1,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d1095N_119d2320W_LST.json
+20,47.0347,-122.863,"Olympia, WA",2,0,5,0,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_047d0347N_122d8630W_LST.json
+21,46.4134,-117.0293,"Lewiston, ID",8,1,1,0,1,3,NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d4134N_117d0293W_LST.json
+22,46.2199,-119.0837,"Kennewick, WA",5,0,8,0,1,1,NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d2199N_119d0837W_LST.json
+23,46.1704,-123.7804,"Navy Heights, OR",4,0,5,0,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d1704N_123d7804W_LST.json
+24,46.1514,-122.8191,"Kelso, WA",0,0,6,0,1,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d1514N_122d8191W_LST.json
+25,46.0562,-118.3476,"Walla Walla, WA",6,0,7,2,0,2,NASA/POWER_Point_Monthly_Timeseries_1981_2020_046d0562N_118d3476W_LST.json
+26,45.4969,-122.5938,"Portland, OR",0,0,0,0,0,0,NASA/POWER_Point_Monthly_Timeseries_1981_2020_045d4969N_122d5938W_LST.json
