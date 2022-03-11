@@ -29,8 +29,8 @@ def model_validation(locations, sample):
     X_train, X_test = single_split(X)
     X_train.index = pd.DatetimeIndex(X_train.index.values,
                                      freq=X_train.index.inferred_freq)
-    (p,d,q) = (opts['p'][sample],opts['d'][sample],opts['q'][sample])
-    (P,D,Q,s) = (opts['P'][sample],opts['D'][sample],opts['Q'][sample],12)
+    (p,d,q) = (locations['p'][sample],locations['d'][sample],locations['q'][sample])
+    (P,D,Q,s) = (locations['P'][sample],locations['D'][sample],locations['Q'][sample],12)
     model = SARIMAX(X_train, order = (p,d,q), seasonal_order = (P,D,Q,s))
     model_fit = model.fit(disp = False)
     predict = model_fit.get_prediction(start='2017-01-01', end='2020-12-01')
