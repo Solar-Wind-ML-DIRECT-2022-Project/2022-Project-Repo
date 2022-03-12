@@ -80,7 +80,6 @@ class test_hyperparam_opt(unittest.TestCase):
         X, y = TSS(df)
         results = study_hyper(y['y_train'], y['y_val'], n_trials=1)
         return
-    '''
 
     def test_r2(self):
         df = loadjson(filename)
@@ -89,7 +88,7 @@ class test_hyperparam_opt(unittest.TestCase):
         X, y = TSS(df)
         score = r2score_TSS(y['y_train'], y['y_val'], 6, 1, 3, 1, 0, 1)
         assert isinstance(score, float)
-
+    '''
     def test_rs_fail(self):
         df = loadjson(filename)
         df = rm13(df)

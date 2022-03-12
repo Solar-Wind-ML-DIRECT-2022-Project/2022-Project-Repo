@@ -13,6 +13,8 @@ sample2 = ('NASA/POWER_Point_Monthly_Timeseries'
            '_1981_2020_047d6155N_122d2917W_LST.csv')
 sample3 = ('NASA/POWER_Point_Monthly_Timeseries'
            '_1981_2020_047d5590N_122d7195W_LST.json')
+sample4 = ('NASA/POWER_Point_Monthly_Timeseries'
+           '_1981_2020_046d1704N_123d7804W_LST.json')
 
 data = json_to_csv.import_geojson(sample3)
 convert = json_to_csv.convert_data(data)
@@ -41,4 +43,25 @@ class TestJsonToCsv(unittest.TestCase):
         sample3 = ('NASA/POWER_Point_Monthly_Timeseries'
                    '_1981_2020_047d5590N_122d7195W_LST.json')
         data = json_to_csv.import_geojson(sample3)
-        self.assertRaises(AttributeError, json_to_csv.geojson_to_csv, dummydf)
+        self.assertRaises(TypeError, json_to_csv.geojson_to_csv, dummydf)
+
+    def test_json_to_df(self):
+        sample4 = ('NASA/POWER_Point_Monthly_Timeseries'
+                   '_1981_2020_046d1704N_123d7804W_LST.json')
+        data = json_to_csv.import_geojson(sample4)
+        df = json_to_csv.convert_data(data)
+        assert type(df) == pd.DataFrame
+
+    def test_convert_data(self):
+        data = json_to_csv.import_geojson(sample4)
+        assert type(data['parameter'][0]) == dict
+
+    def test_rm_ann(self):
+        data = json_to_csv.import_geojson(sample4)
+        df = json_to_csv.convert_data(data)
+        df2 = json_to_csv.remove_annual(df)
+        assert df2.shape[0] <= df.shape[0]
+
+    def test_todt(self):
+        
+        assert True
