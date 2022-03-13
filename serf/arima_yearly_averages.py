@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 
 def arima_averages(df):
