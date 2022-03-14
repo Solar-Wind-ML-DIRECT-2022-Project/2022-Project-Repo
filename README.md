@@ -1,4 +1,6 @@
-<img align="center" width="100" height="100" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
+<p align="center">
+  <img width="460" height="300" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
+</p>
 
 # SERF: Solar Energy Resource Forecasting 
 ---
