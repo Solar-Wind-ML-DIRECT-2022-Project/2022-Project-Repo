@@ -63,7 +63,8 @@ def predict_test(locations, sample):
                  locations['d'][sample], locations['q'][sample])
     (P, D, Q, s) = (locations['P'][sample],
                     locations['D'][sample], locations['Q'][sample], 12)
-    model = SARIMAX(X_train, order=(p, d, q), seasonal_order=(P, D, Q, s))
+    model = SARIMAX(X_train, order=(p, d, q), seasonal_order=(P, D, Q, s),
+                    enforce_stationarity=False, enforce_invertibility=False)
     model_fit = model.fit(maxiter=50, method='powell', disp=False)
     predict = model_fit.get_prediction(start='2017-01-01', end='2020-12-01')
 

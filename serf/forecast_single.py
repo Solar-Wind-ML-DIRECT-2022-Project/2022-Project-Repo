@@ -24,7 +24,8 @@ def forecast(locations, sample):
                  locations['d'][sample], locations['q'][sample])
     (P, D, Q, s) = (locations['P'][sample],
                     locations['D'][sample], locations['Q'][sample], 12)
-    model = SARIMAX(X, order=(p, d, q), seasonal_order=(P, D, Q, s))
+    model = SARIMAX(X, order=(p, d, q), seasonal_order=(P, D, Q, s),
+                    enforce_stationarity=False, enforce_invertibility=False)
     fit_model = model.fit(maxiter=50, method='powell', disp=False)
     forecast = fit_model.get_prediction(start='2021-01-01', end='2035-12-01')
     # ci = forecast.conf_int()
