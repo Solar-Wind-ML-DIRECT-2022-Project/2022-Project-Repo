@@ -1,4 +1,4 @@
-![alt text](https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png "SERF logo")
+<img align="center" width="100" height="100" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
 
 # SERF: Solar Energy Resource Forecasting 
 ---
