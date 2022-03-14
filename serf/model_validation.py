@@ -17,7 +17,7 @@ from ts_train_test_split import single_split
 
 
 def model_val(locations, sample):
-    '''use pd.read_csv('Locations.csv') to access required data.
+    '''use pd.read_csv('Locations_2.csv') to access required data.
     Sample must be integer index of desired location.
     inputs hyperparameters and fits model with training set,
     predicts last 48 months, calculates MSE and r2 of predicted values
@@ -47,11 +47,10 @@ def model_val(locations, sample):
 
 
 def predict_test(locations, sample):
-    '''use pd.read_csv('Locations.csv') to access required data.
+    '''use pd.read_csv('Locations_2.csv') to access required data.
     Sample must be integer index of desired location.
     inputs hyperparameters and fits model with training set,
-    predicts last 48 months, calculates MSE and r2 of predicted values
-    against X_test (48 months)'''
+    predicts last 48 months, returns X_test df, predicted values df'''
 
     prediction = []
     geojson = locations['filepath'][sample]
