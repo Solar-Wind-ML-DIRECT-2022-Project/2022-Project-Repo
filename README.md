@@ -1,7 +1,16 @@
 # SERF: Solar Energy Resource Forecasting
+
+![alt text][logo]
+
+[logo]: https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png "SERF logo"
+
 ## Motivation
-Transitioning to renewable energy resources is key to mitigating the effects of climate change. 
-For companies and individuals interested in switching to renewable energy resources, it is important to know whether those resources will be reliable in the future. In this package, we’ve forecasted the solar resource (i.e. solar irradiance) based upon prior historical data for the purpose of understanding how solar irradiance may change over time and which locations across Washington State are optimal for said resource. This model may be used for other locations and for forecasting other renewable energy resources if so desired in the future. 
+The future of energy is renewable.
+
+Though this has long been the leading sentiment regarding climate change, global warming, and the future of the earth and humanity alike, there are still many logistical questions that need to be answered before transitioning to renewable energy resources can become mainstream. Many homeowners are hesitant to rely on “unreliable” resources like sunlight and wind power, given the unpredictable nature of nature itself. And in temperate climates like Washington, where the sun all but disappears during the winter, investing in solar panels—for both individual consumers and companies alike—seems like a high risk, low reward gamble.
+
+The Solar Energy Resource Forecasting (SERF) project aims to address concerns about the future of solar energy in a climate that grows more unpredictable with climate change every year. Drawing from historical trends in solar irradiance, using data provided by NASA’s POWER project (see: Acknowledgements), we introduce a forecasting tool for companies and individuals to use to plan their investment in solar energy with more confidence. Created with the state of Washington in mind, our model forecasts solar resource availability based on geographic location through 2035. 
+
 
 ## Methods
 A commonly used statistical method for time series forecasting is the ARIMA model. Autoregressive integrated moving average, or ARIMA, Utilizes lagged values (autoregressive) of a target variable to make a prediction based on trends (integrated). The model also takes lagged prediction errors as inputs (moving average) to improve prediction accuracy.
