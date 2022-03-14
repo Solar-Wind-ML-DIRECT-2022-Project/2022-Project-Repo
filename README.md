@@ -1,8 +1,9 @@
+<p align="center">
+    // ![alt text](https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png "SERF logo")
+</p>
+
 # SERF: Solar Energy Resource Forecasting 
-
-![alt text](https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png "SERF logo")
-
-
+---
 ## Motivation
 The future of energy is renewable.
 
