@@ -1,3 +1,4 @@
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo)
 <p align="center">
   <img width="300" height="260" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
 </p>
@@ -56,4 +57,4 @@ Spencer Cira - sgcira@uw.edu  <br>
 Isabelle Pacheco - ipach@uw.edu   <br>
 Erick Tieu - etieu@uw.edu    <br>
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo)
+
