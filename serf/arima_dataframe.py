@@ -6,7 +6,7 @@ import pandas as pd
 
 def arima_results(df):
     # Associating a year and a month with the ARIMA predictions
-    if isinstance(df,pd.DataFrame):
+    if isinstance(df, pd.DataFrame):
         pass
     else:
         raise TypeError('input must be a dataframe of the predicted results')
