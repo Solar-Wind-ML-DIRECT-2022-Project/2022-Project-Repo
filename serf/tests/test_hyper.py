@@ -71,6 +71,16 @@ class test_hyperparam_opt(unittest.TestCase):
         with self.assertRaises(TypeError):
             X, Y = TSS(1)
 
+    def test_rs_fail(self):
+        df = loadjson(filename)
+        df = rm13(df)
+        df = Prophet_preproc(df)
+        X, y = TSS(df)
+        y_train = y['y_train']
+        y_val = y['y_val']
+        with self.assertRaises(ValueError):
+            r2score_TSS(y_train, y_val, 'a', 2, 3, 4, 5, 6)
+
     '''
     this is an intensive test, only run when necessary
     def test_hyper_study(self):
@@ -89,12 +99,3 @@ class test_hyperparam_opt(unittest.TestCase):
         score = r2score_TSS(y['y_train'], y['y_val'], 6, 1, 3, 1, 0, 1)
         assert isinstance(score, float)
     '''
-    def test_rs_fail(self):
-        df = loadjson(filename)
-        df = rm13(df)
-        df = Prophet_preproc(df)
-        X, y = TSS(df)
-        y_train = y['y_train']
-        y_val = y['y_val']
-        with self.assertRaises(ValueError):
-            r2score_TSS(y_train, y_val, 'a', 2, 3, 4, 5, 6)
