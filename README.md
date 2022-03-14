@@ -20,7 +20,11 @@ SERF utilizes SARIMA (seasonal auto-regressive integrated moving average) which 
 
 ### Using SARIMAX
 
-Though SERF package has been specifically tailored to Washington-area datasets from NASA, the backbone of the python code and functions could be applied to other regions, other target variables, and different forecasting periods. 
+Though the SERF package has been specifically tailored to Washington-area datasets from NASA dated from 1984-2020, the backbone of the python code and functions could be applied to other regions, other target variables, or different forecasting periods. 
+
+The forecasting model used in this package is SARIMAX, or SARIMA with Exogenous variables. This model allows for multivariate predictions, in the case that additional exogenous variables affect the behavior of the target variable. The drawback to this model exists with forecasting, as any out-of-sample forecasting still requires existent exogenous data. For this reason, we were unable to apply the multivariate aspect to our package, but it may be useful in other cases. 
+
+See the ``examples`` directory for explanations and examples of the package functions.
 
 ## Usage
 
