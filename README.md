@@ -44,6 +44,8 @@ Step 4: Interact with the code via ``Plotly Updated.ipynb``, simply run each cel
 
 
 ### Organization
+Univeristy of Washington, Department of Chemical Engineering <br>
+3781 Okanogan Ln, Seattle, WA 98105
 
 
 ## License 
