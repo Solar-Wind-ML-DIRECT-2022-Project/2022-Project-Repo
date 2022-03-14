@@ -63,5 +63,35 @@ class TestJsonToCsv(unittest.TestCase):
         assert df2.shape[0] <= df.shape[0]
 
     def test_todt(self):
-        
-        assert True
+        data = json_to_csv.import_geojson(sample4)
+        df = json_to_csv.convert_data(data)
+        df = json_to_csv.remove_annual(df)
+        df = json_to_csv.to_datetime(df)
+        assert type(df) == pd.DataFrame
+
+    def test_todt_time(self):
+        data = json_to_csv.import_geojson(sample4)
+        df = json_to_csv.convert_data(data)
+        df = json_to_csv.remove_annual(df)
+        df = json_to_csv.to_datetime(df)
+        assert type(df.index[0]) == pd.Timestamp
+
+    def test_todt_fail(self):
+        with self.assertRaises(AttributeError):
+            json_to_csv.to_datetime('a')
+
+    def test_geojson_csv(self):
+        df = json_to_csv.geojson_to_csv(sample4)
+        assert type(df) == pd.DataFrame
+
+    def test_geojson_csv_nofile(self):
+        with self.assertRaises(ValueError):
+            json_to_csv.geojson_to_csv('no_filename_')
+
+    def test_todt_repeat(self):
+        data = json_to_csv.import_geojson(sample4)
+        df = json_to_csv.convert_data(data)
+        df = json_to_csv.remove_annual(df)
+        df = json_to_csv.to_datetime(df)
+        with self.assertRaises(TypeError):
+            json_to_csv.to_datetime(df)

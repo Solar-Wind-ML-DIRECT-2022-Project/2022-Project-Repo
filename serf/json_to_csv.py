@@ -2,12 +2,25 @@ import geopandas as gp
 import pandas as pd
 import datetime as dt
 import numpy as np
+import os
 
 
 def import_geojson(geojson):
     '''imports geojson to notebook and reads with geopandas'''
     '''input must be in 'NASA/<file.json>' format, or other path name'''
     filename = geojson
+    
+    if type(filename) == str:
+        pass
+    else:
+        raise TypeError('input is not a string')
+        return
+
+    if os.path.exists(geojson):
+        pass
+    else:
+        raise ValueError('file does not exist')
+    
     if filename.endswith('.json'):
         data = gp.read_file(filename)
     else:
