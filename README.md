@@ -47,14 +47,22 @@ Step 4: Interact with the code via ``Plotly Updated.ipynb``, simply run each cel
 As mentioned above, once the ``Plotly Updated.ipynb`` is opened on your local computer, the cells can simply be run to visualize the analysis. Below are some examples of the funcinality and visualization capabilites currently available within the software.
 
 #### Map of all the locations in the database
-
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo)
+<p align="center">
+  <img width="300" height="260" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
+</p>
 
 #### Forecasts for all locations
-
-
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo)
+<p align="center">
+  <img width="300" height="260" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
+</p>
 
 #### Forceast for a single location
-
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo)
+<p align="center">
+  <img width="300" height="260" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
+</p>
 
 
 
