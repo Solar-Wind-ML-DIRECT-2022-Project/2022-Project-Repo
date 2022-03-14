@@ -23,8 +23,6 @@ from ts_train_test_split import uni_selection
 from ts_train_test_split import single_split
 
 
-
-
 def TSS(df):
     """
     splits the dataframe using timeseries splits into 11 different splits
@@ -66,7 +64,6 @@ def r2score_TSS(sample, locations, p, d, q, P, D, Q):
     pdq: the hyperparameters for the SARIMAX model.
     """
 
-
     prediction = []
 
     geojson = locations['filepath'][sample]
@@ -82,7 +79,7 @@ def r2score_TSS(sample, locations, p, d, q, P, D, Q):
 
 #   start and end value is data dependent
     predict = model_fit.get_prediction(start='2013-01-01', end='2016-12-01')
-                                  # (start='2017-01-01', end='2020-12-01')
+    # (start='2017-01-01', end='2020-12-01')
 
     prediction.append(predict.predicted_mean)
     predicted = pd.DataFrame(prediction)
@@ -121,6 +118,3 @@ def study_hyper(sample, locations, n_trials=10):
     results = study.trials_dataframe()
     print(study)
     return results
-
-
-

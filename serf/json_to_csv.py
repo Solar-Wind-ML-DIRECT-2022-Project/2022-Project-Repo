@@ -9,7 +9,7 @@ def import_geojson(geojson):
     '''imports geojson to notebook and reads with geopandas'''
     '''input must be in 'NASA/<file.json>' format, or other path name'''
     filename = geojson
-    
+
     if type(filename) == str:
         pass
     else:
@@ -20,7 +20,7 @@ def import_geojson(geojson):
         pass
     else:
         raise ValueError('file does not exist')
-    
+
     if filename.endswith('.json'):
         data = gp.read_file(filename)
     else:
