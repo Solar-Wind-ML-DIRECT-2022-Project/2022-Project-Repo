@@ -24,10 +24,11 @@ class TestForecast(unittest.TestCase):
                           locations, sample=3.3)
         self.assertRaises(KeyError, forecast_single.forecast,
                           locations, sample=-5)
+        return
 
     def test_output(self):
-        '''checks that the output df of the function is one column
-        and includes all data'''
+        # checks that the output df of the function is one column
+        # and includes all data
         locations = pd.read_csv('Complete.csv', index_col=0)
         result = forecast_single.forecast(locations, sample=25)
         self.assertEqual(np.shape(result), (624, 1))
