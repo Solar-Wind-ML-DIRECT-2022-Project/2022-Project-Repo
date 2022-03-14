@@ -24,6 +24,7 @@ class TestForecast(unittest.TestCase):
                           locations, sample=3.3)
         self.assertRaises(KeyError, forecast_single.forecast,
                           locations, sample=-5)
+        return
 
     def test_output(self):
         '''checks that the output df of the function is one column
