@@ -36,7 +36,9 @@ A detailed list of dependencies can be accessed in ``environment.yml``.
 
 ### Cloning and Installation
 
-The SERF package can be accessed via the Github repo. To clone:
+Step 1: The SERF package can be accessed via the Github repo. To clone: ``git clone ``. <br>
+Step 2: Install the environment necessary to run the software. To create the environment: ``conda env create -f environment.yml``.
+Step 3: Open ``Plotly Updated.ipynb`` with the command ``environment.yml``
 
 
 
