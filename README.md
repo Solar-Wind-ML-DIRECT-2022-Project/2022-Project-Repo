@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300" height="240" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
+  <img width="300" height="260" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
 </p>
 
 # SERF: Solar Energy Resource Forecasting 
@@ -18,8 +18,28 @@ A commonly used statistical method for time series forecasting is the autoregres
 SERF utilizes SARIMA (seasonal auto-regressive integrated moving average) which is an extension of the statistical prediction approach ARIMA. SARIMA handles univariate time series data with seasonal variations. For this package, the model is fitted to historical solar irradiance index for specific geolocations in a confined geographical region (Washington) and forecasts future location-specific irradiance monthly averages. These forecasted averages are then used to provide estimates (based on a linear surface fit) for locations that lie between the known locations.
 
 
-## Usage
+## Using Plotly
 Provide an example of how to use the software
+
+## Using SARIMAX
+
+Though SERF package has been specifically tailored to Washington-area datasets from NASA, the backbone of the python code and functions could be applied to other regions, other target variables, and different forecasting periods. 
+
+### Requirements
+
+The SERF package uses the following main dependency:
+
+1. Python 3.7
+
+A detailed list of dependencies can be accessed in ``environment.yml``. 
+
+### Cloning and Installation
+
+The SERF package can be accessed via the Github repo. To clone:
+
+
+
+### Organization
 
 
 ## License 
