@@ -12,8 +12,10 @@ def uni_selection(df, variable=['ALLSKY_KT']):
     X = df[variable]
     if type(X) != pd.DataFrame:
         raise TypeError('X is pd.Series, not DataFrame. Check parameters.')
-    else: pass
+    else:
+        pass
     return(X)
+
 
 def single_split(X, test_size=48):
     '''performs a time-series split on dataset with test size of 48 months,

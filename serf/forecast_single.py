@@ -1,7 +1,4 @@
-import numpy as np
-import geopandas as gp
 import pandas as pd
-import datetime as dt
 
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 
@@ -30,7 +27,7 @@ def forecast(locations, sample):
     model = SARIMAX(X, order=(p, d, q), seasonal_order=(P, D, Q, s))
     fit_model = model.fit(maxiter=50, method='powell', disp=False)
     forecast = fit_model.get_prediction(start='2021-01-01', end='2035-12-01')
-    ci = forecast.conf_int()
+    # ci = forecast.conf_int()
 
     forecasted.append(forecast.predicted_mean)
     forecasts = pd.DataFrame(forecasted).T
