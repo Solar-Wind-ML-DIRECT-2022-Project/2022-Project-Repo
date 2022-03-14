@@ -6,7 +6,7 @@ For companies and individuals interested in switching to renewable energy resour
 ## Methods
 A commonly used statistical method for time series forecasting is the ARIMA model. Autoregressive integrated moving average, or ARIMA, Utilizes lagged values (autoregressive) of a target variable to make a prediction based on trends (integrated). The model also takes lagged prediction errors as inputs (moving average) to improve prediction accuracy.
 
-This package utilizes SARIMA (seasonal auto-regressive integrated moving average) which is an extension of the statistical prediction approach ARIMA. SARIMA handles univariate time series data with seasonal variations. For this package, the model takes in historical irradiance data for specific geolocations in a confined geographical region. and predicts future irradiance data for each of the geolocations. The prediction data for each of the locations is then used to provide estimates (based on a linear surface fit) for locations that lie between the known locations.
+This package utilizes SARIMA (seasonal auto-regressive integrated moving average) which is an extension of the statistical prediction approach ARIMA. SARIMA handles univariate time series data with seasonal variations. For this package, the model takes in historical irradiance data for specific geolocations in a confined geographical region and predicts future irradiance data for each of the geolocations. The prediction data for each of the locations is then used to provide estimates (based on a linear surface fit) for locations that lie between the known locations.
 
 ## Usage
 Provide an example of how to use the software
