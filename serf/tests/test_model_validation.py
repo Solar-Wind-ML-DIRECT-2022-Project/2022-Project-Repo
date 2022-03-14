@@ -20,7 +20,7 @@ locations = pd.read_csv('Final_validation.csv', index_col=0)
 
 
 class TestModelValidation(unittest.TestCase):
-    
+
     def test_inputs(self):
         '''check that the functions only accept positive int.'''
         locations = pd.read_csv('Final_validation.csv', index_col=0)

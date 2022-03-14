@@ -19,9 +19,9 @@ import model_testing_function
 locations = pd.read_csv('Final_validation.csv')
 
 '''class TestModelTestingFunction(unittest.TestCase):
-    
+
     def test_output(self):
-        '''#is the output shape correct?'''
+        # is the output shape correct?
         locations = pd.read_csv('Final_validation.csv')
         results = model_testing_function.test_all(locations)
         self.assertEqual(np.shape(results), (27, 2))

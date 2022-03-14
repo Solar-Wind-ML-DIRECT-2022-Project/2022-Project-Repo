@@ -22,8 +22,8 @@ class Testplotly(unittest.TestCase):
             arima_results('a')
 
     def test_forecast(self):
-       df = forecast(locations, (2))
-       assert df.shape[0] > 444
+        df = forecast(locations, (2))
+        assert df.shape[0] > 444
 
     def test_arima_averages(self):
         df = forecast(locations, (1))
@@ -36,4 +36,3 @@ class Testplotly(unittest.TestCase):
         df = forecast(locations, (1))
         with self.assertRaises(KeyError):
             df = arima_averages(df)
- 
