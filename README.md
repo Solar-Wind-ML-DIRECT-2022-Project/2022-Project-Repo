@@ -55,3 +55,5 @@ Claire Benstead - cbens01@uw.edu    <br>
 Spencer Cira - sgcira@uw.edu  <br>
 Isabelle Pacheco - ipach@uw.edu   <br>
 Erick Tieu - etieu@uw.edu    <br>
+
+https://img.shields.io/github/languages/code-size/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo
