@@ -19,12 +19,14 @@ A commonly used statistical method for time series forecasting is the autoregres
 SERF utilizes SARIMA (seasonal auto-regressive integrated moving average) which is an extension of the statistical prediction approach ARIMA. SARIMA handles univariate time series data with seasonal variations. For this package, the model is fitted to historical solar irradiance index for specific geolocations in a confined geographical region (Washington) and forecasts future location-specific irradiance monthly averages. These forecasted averages are then used to provide estimates (based on a linear surface fit) for locations that lie between the known locations.
 
 
-## Using Plotly
+### Using Plotly
 Provide an example of how to use the software
 
-## Using SARIMAX
+### Using SARIMAX
 
 Though SERF package has been specifically tailored to Washington-area datasets from NASA, the backbone of the python code and functions could be applied to other regions, other target variables, and different forecasting periods. 
+
+## Usage
 
 ### Requirements
 
@@ -43,7 +45,7 @@ Step 4: Interact with the code via ``Plotly Updated.ipynb``, simply run each cel
 
 
 
-### Organization
+## Organization
 Univeristy of Washington, Department of Chemical Engineering <br>
 3781 Okanogan Ln, Seattle, WA 98105
 
