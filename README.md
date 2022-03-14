@@ -18,13 +18,15 @@ A commonly used statistical method for time series forecasting is the autoregres
 
 SERF utilizes SARIMA (seasonal auto-regressive integrated moving average) which is an extension of the statistical prediction approach ARIMA. SARIMA handles univariate time series data with seasonal variations. For this package, the model is fitted to historical solar irradiance index for specific geolocations in a confined geographical region (Washington) and forecasts future location-specific irradiance monthly averages. These forecasted averages are then used to provide estimates (based on a linear surface fit) for locations that lie between the known locations.
 
+### Using SARIMAX
 
-## Using Plotly
-Provide an example of how to use the software
+Though the SERF package has been specifically tailored to Washington-area datasets from NASA dated from 1984-2020, the backbone of the python code and functions could be applied to other regions, other target variables, or different forecasting periods. 
 
-## Using SARIMAX
+The forecasting model used in this package is SARIMAX, or SARIMA with Exogenous variables. This model allows for multivariate predictions, in the case that additional exogenous variables affect the behavior of the target variable. The drawback to this model exists with forecasting, as any out-of-sample forecasting still requires existent exogenous data. For this reason, we were unable to apply the multivariate aspect to our package, but it may be useful in other cases. 
 
-Though SERF package has been specifically tailored to Washington-area datasets from NASA, the backbone of the python code and functions could be applied to other regions, other target variables, and different forecasting periods. 
+See the ``examples`` directory for explanations and examples of the package functions.
+
+## Usage
 
 ### Requirements
 
@@ -38,12 +40,14 @@ A detailed list of dependencies can be accessed in ``environment.yml``.
 
 Step 1: The SERF package can be accessed via the Github repo. To clone: ``git clone https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo.git``. <br>
 Step 2: Install the environment necessary to run the software. To create the environment: ``conda env create -f environment.yml``. <br>
-Step 3: Open ``Plotly Updated.ipynb`` with the command ``jupyter notebook 'Plotly Updated.ipynb'``. <br>
+Step 3: Open ``Plotly Updated.ipynb``. To open: ``jupyter notebook 'Plotly Updated.ipynb'``. <br>
 Step 4: Interact with the code via ``Plotly Updated.ipynb``, simply run each cell block and interact with the plots as you wish.
 
 
 
-### Organization
+## Organization
+Univeristy of Washington, Department of Chemical Engineering <br>
+3781 Okanogan Ln, Seattle, WA 98105
 
 
 ## License 
