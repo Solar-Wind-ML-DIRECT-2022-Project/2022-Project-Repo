@@ -1,10 +1,16 @@
 import datetime
+import pandas as pd
 
 # pred_sol was a list that was the prediction from ARIMA
 
 
 def arima_results(df):
     # Associating a year and a month with the ARIMA predictions
+    if isinstance(df,pd.DataFrame):
+        pass
+    else:
+        raise TypeError('input must be a dataframe of the predicted results')
+
     df = df.rename(columns={"solar": "Solar Ratio"})
     years = []
     year = 1984
