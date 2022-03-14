@@ -20,7 +20,7 @@ from model_validation import model_val
 def test_all(locations):
     '''time-series splits the ALLSKY_KT data into X_train, X_test,
     fits model with X_train and opt hyperparams,
-    compares to X_test and returns MSE, r2 for each row in locations.csv'''
+    compares to X_test and returns MSE, r2 for each row in Locations_2.csv'''
     MSEs = []
     r2s = []
     for row in range(len(locations)):
@@ -36,6 +36,6 @@ def test_all(locations):
 
 def append_results(locations, results):
     '''adds results from test_all function to a
-    df with locations.csv information'''
+    df with Locations_2.csv information'''
     accuracy = pd.concat([locations, results], axis=1)
     return(accuracy)
