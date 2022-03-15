@@ -44,7 +44,7 @@ Step 3: Open ``Plotly Updated.ipynb``. To open: ``jupyter notebook 'Plotly Updat
 Step 4: Interact with the code via ``Plotly Updated.ipynb``, simply run each cell block and interact with the plots as you wish.
 
 ### Interacting with Plotly
-As mentioned above, once the ``Plotly Updated.ipynb`` is opened on your local computer, the cells can simply be run to visualize the analysis. Below are some examples of the funcinality and visualization capabilites currently available within the software.
+As mentioned above, once the ``Plotly Updated.ipynb`` is opened on your local computer, the cells can simply be run to visualize the analysis. Below are some examples of the functionality and visualization capabilities currently available within the software.
 
 #### Map of all the locations in the database
 ![GitHub code size in bytes](https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/Map.png)
