@@ -2,26 +2,9 @@
 
 These functions utilize the ``ts_train_test_split.py`` functions and refer to a csv containing the metadata for each location.
 
-    import numpy as np
-    import geopandas as gp
-    import pandas as pd
-    import datetime as dt
+### Testing a single model
 
-    from statsmodels.tsa.statespace.sarimax import SARIMAX
-    from sklearn.metrics import mean_squared_error
-    from sklearn.metrics import r2_score
-
-    # import .py scripts from repo
-    import json_to_csv
-    from json_to_csv import geojson_to_csv
-
-    import ts_train_test_split
-    from ts_train_test_split import uni_selection
-    from ts_train_test_split import single_split
-
-### Validating a single model
-
-Both functions, ``model_val`` and ``predict_test`` reference a csv/pandas dataframe that contains filepaths and hyperparameters for each location. ``sample`` is the desired location for validating, referenced by the index location in the csv/pandas dataframe. Model hyperparameters are selected from the ``sample`` row in the df and are location-specific.
+Both functions, ``model_val`` and ``predict_test`` reference a csv/pandas dataframe that contains filepaths and hyperparameters for each location. ``sample`` is the desired location for testing, referenced by the index location in the csv/pandas dataframe. Model hyperparameters are selected from the ``sample`` row in the df and are location-specific.
 
 The fitted model is used to predict solar insolance for the last 48 months of in-sample dates (same as the test size specified in the ``single_split`` function). 
 

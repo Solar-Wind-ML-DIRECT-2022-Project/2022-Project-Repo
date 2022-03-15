@@ -29,7 +29,7 @@ Though the SERF package has been specifically tailored to Washington-area datase
 
 The forecasting model used in this package is SARIMAX, or SARIMA with Exogenous variables. This model allows for multivariate predictions, in the case that additional exogenous variables affect the behavior of the target variable. The drawback to this model exists with forecasting, as any out-of-sample forecasting still requires existent exogenous data. For this reason, we were unable to apply the multivariate aspect to our package, but it may be useful in other cases. 
 
-See the ``examples`` directory for explanations and examples of the package functions.
+See the ``examples`` directory for explanations and examples of the package functions, and how they could be modified for future use.
 
 ## Usage
 
