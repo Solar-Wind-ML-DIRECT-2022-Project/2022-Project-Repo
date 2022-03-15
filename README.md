@@ -43,6 +43,22 @@ Step 2: Install the environment necessary to run the software. To create the env
 Step 3: Open ``Plotly Updated.ipynb``. To open: ``jupyter notebook 'Plotly Updated.ipynb'``. <br>
 Step 4: Interact with the code via ``Plotly Updated.ipynb``, simply run each cell block and interact with the plots as you wish.
 
+### Interacting with Plotly
+As mentioned above, once the ``Plotly Updated.ipynb`` is opened on your local computer, the cells can simply be run to visualize the analysis. Below are some examples of the functionality and visualization capabilities currently available within the software.
+
+#### Map of all the locations in the database
+![GitHub code size in bytes](https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/Map.png)
+<p align="center">
+  
+
+#### Forecast for a single location
+![GitHub code size in bytes](https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/example%20plots/Kennewick%20yearly%20avg%20line%20plot.png)
+<p align="center">
+
+
+#### Forecast for all locations
+![GitHub code size in bytes](https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/example%20plots/All%20locations%20yearly%20avg%20line%20plot.png)
+<p align="center">
 
 
 ## Organization
