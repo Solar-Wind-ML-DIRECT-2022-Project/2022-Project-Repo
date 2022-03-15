@@ -78,7 +78,7 @@ Our project is licensed under the MIT license. See ``LICENSE`` for more informat
 ## Acknowledgments
 
 <p align="center">
-  <img width="260" height="140" src="https://power.larc.nasa.gov/docs/gallery/images/power_logo.png">
+  <img width="260" height="100" src="https://power.larc.nasa.gov/docs/gallery/images/power_logo.png">
 </p>
 
 These data were obtained from the NASA Langley Research Center (LaRC) POWER Project funded through the NASA Earth Science/Applied Science Program.
