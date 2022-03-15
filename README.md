@@ -1,5 +1,6 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo)
 ![GitHub contributors](https://img.shields.io/github/contributors-anon/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo)
+![GitHub last commit](https://img.shields.io/github/last-commit/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo)
 <p align="center">
   <img width="300" height="260" src="https://github.com/Solar-Wind-ML-DIRECT-2022-Project/2022-Project-Repo/blob/main/serf/serf%20logo.png">
 </p>
